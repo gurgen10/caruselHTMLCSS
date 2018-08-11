@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/opensans/opensans.woff2') format('woff2'), url('../fonts/opensans/opensans.woff') format('woff'), url('../fonts/opensans/opensans.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Thin'), local('Roboto-Thin'), url('../fonts/roboto/Roboto.woff2') format('woff2'), url('../fonts/roboto/Roboto.woff') format('woff'), url('../fonts/roboto/Roboto.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+}
+.background-25 {
+    height: 100%;
+    padding-top: 8%;
+    background: -moz-linear-gradient(right, #3e948b 0%, #7cc7c3 18%, #98dfdc 35%,#ffffff 35%, #ffffff 100%); 
+    background: -webkit-linear-gradient(right, #3e948b 0%, #7cc7c3 18%, #98dfdc 35%,#ffffff 35%, #ffffff 100%); 
+    background: linear-gradient(to right, #3e948b 0%, #7cc7c3 18%, #98dfdc 35%,#ffffff 35%, #ffffff 100%);
+}
+.image{
+    height: 300px;    
+}
+.image img{
+    height: 100%;
+}
+
+.media h1{
+    font-family:"Roboto", "Open Sans", sans-serif; 
+}
+.media p{
+    font-family: "Open Sans", "Roboto", sans-serif; 
+    color:grey;
+}
+.slider li{
+    width: 50px;
+    height: 50px;
+    
+    background-color: darkgray;
+}
+.btn-download{
+    background-color: #49c2c4;
+    color: #ffffff;
+    border: 0;
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.carousel-indicators{
+    right: -700px;
+    bottom: -110px;
+}
+
+li.indicator{
+    background-color: #E1E1E1;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 20px;
+    
+}
+
+li.active{
+    background-color: #49c2c4;
+}
+@media screen and  (max-width: 768px){
+    .carousel-indicators{
+        right: 0;
+        bottom: -110px;
+        text-align: center;
+        align-items: center;
+    }
+    .background-25 {
+        height: 100%;
+        padding-bottom: 8%;
+        background: -moz-linear-gradient(top, #3e948b 0%, #7cc7c3 18%, #98dfdc 35%,#ffffff 35%, #ffffff 100%); 
+        background: -webkit-linear-gradient(top, #3e948b 0%, #7cc7c3 18%, #98dfdc 35%,#ffffff 35%, #ffffff 100%); 
+        background: linear-gradient(to top, #3e948b 0%, #7cc7c3 18%, #98dfdc 35%,#ffffff 35%, #ffffff 100%);
+    }
+    .image{
+        height: 200px;    
+    }
+    
+}

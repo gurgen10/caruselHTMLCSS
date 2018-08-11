@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<meta charset = "utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Homework 22</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="container-fluid background-25 position-relative">
+			<div class="row justify-content-md-center">
+				<div class="images col-12 col-md-6 order-md-first order-last align-self-center text-center w-100">
+					<div id="carousel" class="carousel slide d-inline-block" data-ride="carousel">
+						<!-- Индикаторы -->
+				<ol class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="indicator active"></li>
+						<li data-target="#carousel" data-slide-to="1" class="indicator "></li>
+						<li data-target="#carousel" data-slide-to="2" class="indicator "></li>
+						<li data-target="#carousel" data-slide-to="3" class="indicator "></li>
+					</ol>
+						<div class="carousel-inner">
+							<div class="image carousel-item active">
+								<img class="img-fluid" src="images/travel-collection.png" alt="travel-collection/">
+							</div>
+							<div class="image carousel-item">
+								<img class="img-fluid" src="images/pearl-white.png" alt="pearl-white"/>
+							</div>
+							<div class="image carousel-item">
+								<img class="img-fluid" src="images/master-file-art.png" alt="master-file-art"/>
+							</div>
+							<div class="image carousel-item">
+								<img class="img-fluid" src="images/charcoal_magic.png" alt="charcoal_magic"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="media col-12 col-md-6 row  align-self-end pb-3 justify-content-center pl-5">
+					<div class="col-12 col-md-6 d-md-none d-block text-center text-md-left pb-3" >
+						<img  src="./images/predental.png" alt="Predental"/>
+					</div>
+					<h1 class="col-12 ">Prodential&reg;<br/>Media Center</h1>
+					<p class="col-12 pr-4">Clickthe link below to checkout our media center and find all of our great products and offers.</p>
+					<div class="col-12 row">
+					 	<div class="col-12 col-md-6 px-0">
+							 <input class="btn-download w-100" type="button" value="DOWNLOAD FILES"/>	
+						</div>
+						<div class="col-12 col-md-6 d-none d-md-inline-block" >
+							<img  src="./images/predental.png" alt="Predental"/>
+						</div>
+					</div>
+				</div>
+				
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<script>
+			$('.carousel').carousel({
+				interval: 2000
+				});
+			$('.carousel').on('slide.bs.carousel', function () {
+				let indicatorPassive = document.querySelectorAll("li.indicator");
+				if(indicatorPassive){
+					for(let indic of indicatorPassive){
+						if(indic.getAttribute("class").indexOf("active") > -1){
+							indic.style.backgroundColor = "#49c2c4";
+						}else{
+							indic.style.backgroundColor = "#E1E1E1";
+						}
+					}
+				}
+				
+			})
+		</script>
+	</body>
+</html>
