@@ -15,9 +15,9 @@
 						<!-- Индикаторы -->
 				<ol class="carousel-indicators">
 						<li data-target="#carousel" data-slide-to="0" class="indicator active"></li>
-						<li data-target="#carousel" data-slide-to="1" class="indicator "></li>
-						<li data-target="#carousel" data-slide-to="2" class="indicator "></li>
-						<li data-target="#carousel" data-slide-to="3" class="indicator "></li>
+						<li data-target="#carousel" data-slide-to="1" class="indicator"></li>
+						<li data-target="#carousel" data-slide-to="2" class="indicator"></li>
+						<li data-target="#carousel" data-slide-to="3" class="indicator"></li>
 					</ol>
 						<div class="carousel-inner">
 							<div class="image carousel-item active">
@@ -55,22 +55,21 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<script>
-			$('.carousel').carousel({
-				interval: 2000
-				});
-			$('.carousel').on('slide.bs.carousel', function () {
-				let indicatorPassive = document.querySelectorAll("li.indicator");
-				if(indicatorPassive){
-					for(let indic of indicatorPassive){
-						if(indic.getAttribute("class").indexOf("active") > -1){
-							indic.style.backgroundColor = "#49c2c4";
-						}else{
-							indic.style.backgroundColor = "#E1E1E1";
-						}
-					}
-				}
-				
-			})
+			// $('.carousel').carousel({
+			// 	interval: 2000
+			// 	});
+			// $('.carousel').on('slide.bs.carousel', function () {
+			// 	let indicatorPassive = document.querySelectorAll("li.indicator");
+			// 	if(indicatorPassive){
+			// 		for(let indic of indicatorPassive){
+			// 			if(indic.getAttribute("class").indexOf(" active") > -1){
+			// 				indic.style.backgroundColor = "#49c2c4";
+			// 			}else{
+			// 				indic.style.backgroundColor = "#E1E1E1";
+			// 			}
+			// 		}
+			// 	}
+			// })
 		</script>
 	</body>
 </html>
